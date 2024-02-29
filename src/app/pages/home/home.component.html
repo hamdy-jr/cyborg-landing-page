@@ -1,0 +1,152 @@
+<div class="main-banner">
+  <div class="flex">
+    <div class="lg:w-3/5 pr-4 pl-4">
+      <div>
+        <h6 class="text-lg text-white mb-6">Welcome To Cyborg</h6>
+        <h4 class="text-5xl uppercase mb-6 font-bold text-white">
+          <span class="text-[#ec6090]">Browse</span> Our Popular Games Here
+        </h4>
+        <div class="main-button">
+          <a routerLink="/browse">Browse Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-14 p-7 bg-[#1f2122] rounded-3xl">
+  <div class="heading-section font-bold">
+    <h4><em>Most Popular</em> Right Now</h4>
+  </div>
+  <div>
+    <ng-container *ngFor="let game of mostPopularGames">
+      <div class="lg:w-1/4 pr-4 pl-4 sm:w-1/2 inline-flex p-2">
+        <div class="flex flex-col bg-[#27292a] py-6 px-3.5 rounded-3xl">
+          <img [src]="game.imageUrl" class="w-full rounded-3xl" alt="" />
+          <div>
+            <h4 class="mt-2.5 inline-block text-sm text-white font-bold">
+              {{ game.name }}<br /><span
+                class="text-[#666] block font-normal"
+                >{{ game.creator }}</span
+              >
+            </h4>
+            <ul class="float-right mt-2.5">
+              <li class="text-white text-right text-sm">
+                <i class="fa fa-star text-yellow-400"></i> {{ game.rate }}
+              </li>
+              <li class="text-white text-right text-sm">
+                <i class="fa fa-download text-[#ec6090]"></i>
+                {{ game.downloads }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <div class="main-button text-center mb-[-53px] mt-2.5">
+      <a href="browse.html">Discover Popular</a>
+    </div>
+  </div>
+</div>
+
+<div class="gaming-library mt-14 p-7 bg-[#1f2122] rounded-3xl">
+  <div class="heading-section font-bold">
+    <h4><em>Your Gaming</em> Library</h4>
+  </div>
+  <div>
+    <div class="mb-5 p-5 border-[#27292a] border-b-[1px]">
+      <ul class="flex justify-between items-center">
+        <li>
+          <img
+            src="assets/images/valorant.jpg"
+            alt="valorant"
+            class="templatemo-item"
+          />
+        </li>
+        <li>
+          <h4>Valorant</h4>
+          <span>Riot Games</span>
+        </li>
+        <li>
+          <h4>Date Added</h4>
+          <span>24/08/2020</span>
+        </li>
+        <li>
+          <h4>Hours Played</h4>
+          <span>634 H 22 Mins</span>
+        </li>
+        <li>
+          <h4>Currently</h4>
+          <span>Downloaded</span>
+        </li>
+        <li>
+          <div class="main-border-button border-no-active">
+            <a href="#">Donwloaded</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="mb-5 p-5 border-[#27292a] border-b-[1px]">
+      <ul class="flex justify-between items-center">
+        <li>
+          <img
+            src="assets/images/fortnite.jpg"
+            alt=""
+            class="templatemo-item"
+          />
+        </li>
+        <li>
+          <h4>Fortnite</h4>
+          <span>Epic Games</span>
+        </li>
+        <li>
+          <h4>Date Added</h4>
+          <span>22/06/2010</span>
+        </li>
+        <li>
+          <h4>Hours Played</h4>
+          <span>0 H 0 Mins</span>
+        </li>
+        <li>
+          <h4>Currently</h4>
+          <span>Downloaded</span>
+        </li>
+        <li>
+          <div class="main-border-button"><a href="#">Donwload</a></div>
+        </li>
+      </ul>
+    </div>
+    <div class="mb-5 p-5 border-[#27292a] ]">
+      <ul class="flex justify-between items-center">
+        <li>
+          <img src="assets/images/csgo.jpg" alt="" class="templatemo-item" />
+        </li>
+        <li>
+          <h4>CS-GO</h4>
+          <span>Valve Corporation</span>
+        </li>
+        <li>
+          <h4>Date Added</h4>
+          <span>21/04/2036</span>
+        </li>
+        <li>
+          <h4>Hours Played</h4>
+          <span>892 H 14 Mins</span>
+        </li>
+        <li>
+          <h4>Currently</h4>
+          <span>Downloaded</span>
+        </li>
+        <li>
+          <div class="main-border-button border-no-active">
+            <a href="#">Donwloaded</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="main-button">
+      <a href="profile.html">View Your Library</a>
+    </div>
+  </div>
+</div>

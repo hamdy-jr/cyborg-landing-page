@@ -1,0 +1,73 @@
+<header class="w-[90%] m-auto mt-8">
+  <div class="lg:w-full pr-4 pl-4">
+    <div class="flex flex-wrap">
+      <div class="w-full">
+        <nav
+          class="flex flex-row flex-wrap justify-between items-center mx-auto justify-between"
+        >
+          <a routerLink="/" class="logo">
+            <img src="assets/images/logo.png" alt="Logo" />
+          </a>
+          <div class="">
+            <form id="search" class="relative">
+              <input
+                class="bg-[#27292a] text-[#666] pr-4 pl-10 py-2 rounded-[23px] text-[15px]"
+                type="text"
+                placeholder="Type Something"
+                id="searchText"
+                name="searchKeyword"
+              />
+              <i class="fa fa-search absolute text-[#666] left-3 top-3"></i>
+            </form>
+          </div>
+          <!-- ***** Menu Start ***** -->
+          <ul
+            class="flex list-none pl-0 mb-0 justify-around items-center gap-10"
+          >
+            <li>
+              <a
+                routerLink="/home"
+                routerLinkActive="text-[#e75e8d] "
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="block text-[14px] text-[#666]"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                routerLink="/browse"
+                routerLinkActive="text-[#e75e8d] "
+                class="block text-[14px] text-[#666] hover:text-[#e75e8d]"
+                >Browse</a
+              >
+            </li>
+            <li>
+              <a
+                routerLink="/details"
+                routerLinkActive="text-[#e75e8d] "
+                class="block text-[14px] text-[#666] hover:text-[#e75e8d]"
+                >Details</a
+              >
+            </li>
+            <li>
+              <a
+                routerLink="/profile"
+                routerLinkActive="bg-[#e75e8d] text-[#fff] "
+                class="inline-block text-[14px] text-[#666] bg-[#27292a] rounded-[23px] px-4 py-2 hover:bg-[#e75e8d] hover:text-[#fff]"
+                >Profile
+                <img
+                  class="rounded-full ml-2 inline-block"
+                  src="assets/images/profile-header.jpg"
+                  alt=""
+                  height="30"
+                  width="30"
+              /></a>
+            </li>
+          </ul>
+
+          <!-- ***** Menu End ***** -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

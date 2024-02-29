@@ -1,0 +1,319 @@
+<div class="flex gap-6">
+  <div
+    class="featured-games header-text p-7 bg-[#1f2122] rounded-3xl lg:w-2/3 pr-4 pl-4"
+  >
+    <div class="heading-section font-bold">
+      <h4><em>Featured</em> Games</h4>
+    </div>
+
+    <div class="flex gap-5 justify-around">
+      <ng-container *ngFor="let game of featureGames">
+        <div class="flex flex-col bg-transparent">
+          <div class="">
+            <img
+              [src]="game.imageSrc"
+              class="rounded-3xl w-full h-72"
+              [alt]="game.name"
+            />
+            <h4 class="mt-2.5 inline-block text-sm text-white font-bold">
+              {{ game.name }}<br /><span
+                class="text-[#666] block font-normal"
+                >{{ game.creator }}</span
+              >
+            </h4>
+            <ul class="float-right mt-2.5">
+              <li class="text-white text-right text-sm">
+                <i class="fa fa-star text-yellow-400"></i> {{ game.rate }}
+              </li>
+              <li class="text-white text-right text-sm">
+                <i class="fa fa-download text-[#ec6090]"></i>
+                {{ game.download }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div
+    class="featured-games header-text p-7 bg-[#1f2122] rounded-3xl lg:w-1/3 pr-4 pl-4"
+  >
+    <div class="top-downloaded">
+      <div class="heading-section font-bold">
+        <h4><em>Top</em> Downloaded</h4>
+      </div>
+      <ul>
+        <li class="flex border-[#27292a] border-b-[1px] mb-5 pb-5">
+          <img
+            src="assets/images/fortnite.jpg"
+            alt="fortnite"
+            class="templatemo-item mr-4"
+          />
+          <div>
+            <h4 class="text-white font-bold">Fortnite</h4>
+            <h6 class="text-[#666] mt-1 text-sm">Epic Games</h6>
+            <div class="mt-2">
+              <span class="text-white mr-3"
+                ><i class="fa fa-star text-yellow-400"></i> 4.6</span
+              >
+              <span class="text-white"
+                ><i class="fa fa-download text-[#ec6090]"></i> 2.5M</span
+              >
+            </div>
+          </div>
+          <div class="download flex-grow text-right">
+            <a href="#"
+              ><i
+                class="fa fa-download text-[#ec6090] bg-[#27292a] rounded-full p-3 mt-8"
+              ></i
+            ></a>
+          </div>
+        </li>
+        <li class="flex border-[#27292a] border-b-[1px] mb-5 pb-5">
+          <img
+            src="assets/images/valorant.jpg"
+            alt=""
+            class="templatemo-item mr-4"
+          />
+          <div>
+            <h4 class="text-white font-bold">Valorant</h4>
+            <h6 class="text-[#666] mt-1 text-sm">Epic Games</h6>
+            <div class="mt-2">
+              <span class="text-white mr-2"
+                ><i class="fa fa-star text-yellow-400"></i> 4.8</span
+              >
+              <span class="text-white"
+                ><i class="fa fa-download text-[#ec6090]"></i> 2.2M</span
+              >
+            </div>
+          </div>
+          <div class="download flex-grow text-right">
+            <a href="#"
+              ><i
+                class="fa fa-download text-[#ec6090] bg-[#27292a] rounded-full p-3 mt-8"
+              ></i
+            ></a>
+          </div>
+        </li>
+        <li class="flex border-[#27292a] border-b-[1px] mb-5 pb-5">
+          <img
+            src="assets/images/csgo.jpg"
+            alt="csgo"
+            class="templatemo-item mr-4"
+          />
+          <div>
+            <h4 class="text-white font-bold">CS:GO 2</h4>
+            <h6 class="text-[#666] mt-1 text-sm">IDK</h6>
+            <div class="mt-2">
+              <span class="text-white mr-2"
+                ><i class="fa fa-star text-yellow-400"></i> 4.4</span
+              >
+              <span class="text-white"
+                ><i class="fa fa-download text-[#ec6090]"></i> 2M</span
+              >
+            </div>
+          </div>
+
+          <div class="download flex-grow text-right">
+            <a href="#" class=""
+              ><i
+                class="fa fa-download text-[#ec6090] bg-[#27292a] rounded-full p-3 mt-8"
+              ></i
+            ></a>
+          </div>
+        </li>
+      </ul>
+      <div class="text-center">
+        <a routerLink="/profile" class="font-semibold text-[#ec6090] text-sm"
+          >View All Games</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="start-stream mt-12">
+  <div class="heading-section text-center font-bold">
+    <h4><em>How To Start Your</em> Live Stream</h4>
+  </div>
+  <div>
+    <div class="flex gap-3">
+      <div class="p-7 border-[#444] border-[1px] rounded-3xl">
+        <div class="icon">
+          <img
+            src="assets/images/service-01.jpg"
+            alt=""
+            class="rounded-full max-w-14"
+          />
+        </div>
+        <h4 class="text-lg font-semibold mt-3.5 text-white">
+          Go To Your Profile
+        </h4>
+        <p class="mt-3">
+          lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore
+        </p>
+      </div>
+      <div class="p-7 border-[#444] border-[1px] rounded-3xl">
+        <div class="icon">
+          <img
+            src="assets/images/service-02.jpg"
+            alt=""
+            class="rounded-full max-w-14"
+          />
+        </div>
+        <h4 class="text-lg font-semibold mt-3.5 text-white">
+          Live Stream Button
+        </h4>
+        <p class="mt-3">
+          lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore
+        </p>
+      </div>
+      <div class="p-7 border-[#444] border-[1px] rounded-3xl">
+        <div class="icon">
+          <img
+            src="assets/images/service-03.jpg"
+            alt=""
+            class="rounded-full max-w-14"
+          />
+        </div>
+        <h4 class="text-lg font-semibold mt-3.5 text-white">You Are Live</h4>
+        <p class="mt-3">
+          lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore
+        </p>
+      </div>
+    </div>
+    <div class="main-button text-center mt-6">
+      <a routerLink="/profile">Go To Profile</a>
+    </div>
+  </div>
+</div>
+
+<div class="live-stream p-7 bg-[#1f2122] rounded-3xl mt-16">
+  <div class="heading-section font-bold">
+    <h4><em>Most Popular</em> Live Stream</h4>
+  </div>
+  <div class="flex gap-4 justify-around">
+    <div class="flex flex-col w-1/4">
+      <div>
+        <img
+          src="assets/images/stream-01.jpg"
+          alt="stream-1"
+          class="rounded-3xl w-full"
+        />
+      </div>
+
+      <div class="down-content mt-3 flex">
+        <div>
+          <img
+            src="assets/images/avatar-01.jpg"
+            alt=""
+            class="w-12 rounded-full inline-block mr-4 float-left"
+          />
+        </div>
+
+        <div>
+          <span class="text-[#ec6090]"
+            ><i
+              class="fa fa-check inline-block w-5 bg-[#ec6090] text-white rounded-full text-sm text-center"
+            ></i>
+            KenganC</span
+          >
+          <h4 class="font-bold text-white text-xl">35 Skin Giveaway</h4>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col w-1/4">
+      <div>
+        <img
+          src="assets/images/stream-02.jpg"
+          alt="stream-2"
+          class="rounded-3xl w-full"
+        />
+      </div>
+      <div class="down-content mt-3 flex">
+        <div>
+          <img
+            src="assets/images/avatar-02.jpg"
+            alt=""
+            class="w-12 rounded-full inline-block mr-4 float-left"
+          />
+        </div>
+        <div>
+          <span class="text-[#ec6090]"
+            ><i
+              class="fa fa-check inline-block w-5 bg-[#ec6090] text-white rounded-full text-sm text-center"
+            ></i>
+            LunaMa</span
+          >
+          <h4 class="font-bold text-white text-xl">36 Hours Live Stream</h4>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col w-1/4">
+      <div>
+        <img
+          src="assets/images/stream-03.jpg"
+          alt=""
+          class="rounded-3xl w-full"
+        />
+      </div>
+      <div class="down-content mt-3 flex">
+        <div>
+          <img
+            src="assets/images/avatar-03.jpg"
+            alt=""
+            class="w-12 rounded-full inline-block mr-4 float-left"
+          />
+        </div>
+        <div>
+          <span class="text-[#ec6090]"
+            ><i
+              class="fa fa-check inline-block w-5 bg-[#ec6090] text-white rounded-full text-sm text-center"
+            ></i>
+            Areluwa</span
+          >
+          <h4 class="font-bold text-white text-xl">
+            Maybe Nathej Allnight Chillin'
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col w-1/4">
+      <div>
+        <img
+          src="assets/images/stream-04.jpg"
+          alt=""
+          class="rounded-3xl w-full"
+        />
+      </div>
+      <div class="down-content mt-3">
+        <div>
+          <img
+            src="assets/images/avatar-04.jpg"
+            alt=""
+            class="w-12 rounded-full inline-block mr-4 float-left"
+          />
+        </div>
+        <div>
+          <span class="text-[#ec6090]"
+            ><i
+              class="fa fa-check inline-block w-5 bg-[#ec6090] text-white rounded-full text-sm text-center"
+            ></i>
+            GangTm</span
+          >
+          <h4 class="font-bold text-white text-xl ml-16">
+            Live Streaming Till Morning
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-button text-center mb-[-53px] mt-14">
+    <a routerLink="/streams">Discover All Streams</a>
+  </div>
+</div>
